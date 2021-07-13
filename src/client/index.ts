@@ -27,7 +27,7 @@ export default class DiscordClient extends Client {
     owners: Array<string>;
 
     constructor() {
-        super(BOT_TOKEN);
+        super(BOT_TOKEN, null);
 
         this.api = new API(API_KEY);
         this.commands = new Map();
